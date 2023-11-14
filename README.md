@@ -27,3 +27,14 @@ If you are developing a production application, we recommend updating the config
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
 # Firebase fundamentals
+
+- Every service has a getter method within a subfolder => firebase/firestore
+```typescript
+import { getFirestore } from 'firebase/firestore'; 
+```
+
+# FIRESTORE
+Firestore is a **NoSQL** database with *real time* and *offline* capabilities.
+
+- Firestore prioriza READS over WRITES 
+Normalization => not wentirelly but it's quite forgetable here. | Fast Queries | Real time
